@@ -1,0 +1,27 @@
+.parent-div {
+  margin: 50px 200px;
+}
+
+Table {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 100px;
+  border-color: red;
+}
+
+th {
+  font-size: 12px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+tr {
+  line-height: 80px;
+  font-size: 14px;
+}
+
+.portfolioValue {
+  font-size: 20px;
+}
