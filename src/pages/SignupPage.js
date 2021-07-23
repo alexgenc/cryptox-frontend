@@ -59,7 +59,7 @@ function SignupPage({ signup }) {
       <div>
         <div className="flex flex-col items-center bg-white p-4 border  border-gray-primary mb-4 rounded">
           <h1 className="flex justify-center w-full">
-            <img src="/images/logo.png" alt="CryptoX" className="mt-2 w-6/12 mb-4" />
+            <img src="Images/logo.png" alt="CryptoX" className="mt-2 w-6/12 mb-4" />
           </h1>
           {error && <p className="mb-4 text-xs text-red-primary">{error}</p>}
 
@@ -68,7 +68,7 @@ function SignupPage({ signup }) {
               aria-label="Enter your username"
               type="text"
               placeholder="Username"
-              className="text-sm text-gray base w-full mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
+              className="text-sm text-gray base w-7/12 mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
               value={username}
               onChange={({ target }) => setUsername(target.value)}
             />
@@ -77,7 +77,7 @@ function SignupPage({ signup }) {
               aria-label="Enter your first name"
               type="text"
               placeholder="First Name"
-              className="text-sm text-gray base w-full mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
+              className="text-sm text-gray base w-7/12 mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
               value={firstName}
               onChange={({ target }) => setFirstName(target.value)}
             />
@@ -86,7 +86,7 @@ function SignupPage({ signup }) {
               aria-label="Enter your last name"
               type="text"
               placeholder="Last Name"
-              className="text-sm text-gray base w-full mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
+              className="text-sm text-gray base w-7/12 mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
               value={lastName}
               onChange={({ target }) => setLastName(target.value)}
             />
@@ -95,7 +95,7 @@ function SignupPage({ signup }) {
               aria-label="Enter your email address"
               type="text"
               placeholder="Email Address"
-              className="text-sm text-gray base w-full mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
+              className="text-sm text-gray base w-7/12 mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
               value={emailAddress}
               onChange={({ target }) => setEmailAddress(target.value)}
             />
@@ -105,7 +105,7 @@ function SignupPage({ signup }) {
               type="password"
               placeholder="Password"
               autoComplete="off"
-              className="text-sm text-gray base w-full mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
+              className="text-sm text-gray base w-7/12 mr-3 py-3 mb-3 h-2 border border-gray-primary rounded"
               value={password}
               onChange={({ target }) => setPassword(target.value)}
             />
@@ -113,8 +113,7 @@ function SignupPage({ signup }) {
             <button 
               disabled={isInvalid}
               type="submit"
-              className={`bg-blue-medium text-white w-full rounded h-8font-bold
-              ${isInvalid && 'opacity-50'}`}
+              className={`bg-blue-medium text-white rounded h-8font-bold text-gray w-7/12 mr-3 py-2 border ${isInvalid && 'opacity-50'}`}
             >
               Sign Up
             </button>

@@ -45,10 +45,10 @@ function LoginPage({ login }) {
 
   return (
     <div className="container mx-auto mt-x-lg max-w-screen-md items-center h-screen">
-      <div className="flex flex-col">
+      <div>
         <div className="flex flex-col items-center bg-white p-4 border  border-gray-primary mb-4 rounded">
           <h1 className="flex justify-center w-full">
-            <img src="/images/logo.png" alt="CryptoX" className="mt-2 w-6/12 mb-4" />
+            <img src="Images/logo.png" alt="CryptoX" className="mt-2 w-6/12 mb-4" />
           </h1>
           {error && <p className="mb-4 text-xs text-red-primary">{error}</p>}
 
@@ -75,8 +75,7 @@ function LoginPage({ login }) {
             <button 
               disabled={isInvalid}
               type="submit"
-              className={`bg-blue-medium text-white w-full rounded h-8font-bold
-              ${isInvalid && 'opacity-50'}`}
+              className={`bg-blue-medium text-white rounded h-8font-bold text-gray w-full mr-3 py-2 border ${isInvalid && 'opacity-50'}`}
             >
               Log In
             </button>
