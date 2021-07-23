@@ -14,7 +14,7 @@ const Header = ({ logout }) => {
           <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
             <h1 className="flex justify-center w-full">
               <Link to={ROUTES.DASHBOARD} aria-label="CryptoX logo">
-                <img src="/images/logo.png" alt="CryptoX" className="w-6/12 mt-2" height="200" width="20px" />
+                <img src="Images/logo.png" alt="CryptoX" className="w-6/12 mt-2" height="200" width="20px" />
               </Link>
             </h1>
           </div>
