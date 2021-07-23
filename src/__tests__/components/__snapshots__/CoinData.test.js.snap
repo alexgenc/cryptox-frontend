@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CoinData /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="coinData"
+  >
+    <div
+      class="bg-white mt-3 p-2 rounded border row"
+    >
+      <div
+        class="col-sm"
+      >
+        <div
+          class="d-flex flex-column"
+        >
+          <span
+            class="text-muted coin-data-category"
+          >
+            Market Cap
+          </span>
+          <span>
+            $1,000,000
+          </span>
+        </div>
+        <hr />
+        <div
+          class="d-flex flex-column"
+        >
+          <span
+            class="text-muted coin-data-category"
+          >
+            Total Supply
+          </span>
+          <span>
+            5,000,000
+          </span>
+        </div>
+      </div>
+      <div
+        class="col-sm"
+      >
+        <div
+          class="d-flex flex-column"
+        >
+          <span
+            class="text-muted coin-data-category"
+          >
+            Total Volume
+          </span>
+          <span>
+            $300,000
+          </span>
+        </div>
+        <hr />
+        <div
+          class="d-flex flex-column"
+        >
+          <span
+            class="text-muted coin-data-category"
+          >
+            High (24h)
+          </span>
+          <span>
+            $500
+          </span>
+        </div>
+      </div>
+      <div
+        class="col-sm"
+      >
+        <div
+          class="d-flex flex-column"
+        >
+          <span
+            class="text-muted coin-data-category"
+          >
+            Circulating Supply
+          </span>
+          <span>
+            1,000,000
+          </span>
+        </div>
+        <hr />
+        <div
+          class="d-flex flex-column"
+        >
+          <span
+            class="text-muted coin-data-category"
+          >
+            Low (24h)
+          </span>
+          <span>
+            $450
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
