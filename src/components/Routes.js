@@ -7,6 +7,7 @@ import IsUserLoggedIn from '../helpers/IsUserLoggedIn';
 
 // Lazy load pages for better performance
 const HomePage = lazy(() => import ('../pages/HomePage'));
+const CurrenciesPage = lazy(() => import ('../pages/CurrenciesPage'));
 const WatchlistPage = lazy(() => import ('../pages/WatchlistPage'));
 const PortfolioPage = lazy(() => import ('../pages/PortfolioPage'));
 const CoinDetailPage = lazy(() => import ('../pages/CoinDetailPage'));
@@ -35,6 +36,12 @@ const Routes = ({ login, signup }) => {
         <Route exact path ="/">
           <HomePage />
         </Route>
+
+        <Route exact path={ROUTES.CURRENCIES}>
+          <CurrenciesPage />
+        </Route>
+
+
 
         <IsUserLoggedIn 
           exact path={ROUTES.SIGN_UP} 
