@@ -7,14 +7,15 @@ import WatchlistContext from './context/WatchlistContext';
 import PortfolioContext from './context/PortfolioContext';
 import Header from './components/Header';
 import Routes from './components/Routes';
+import LoadingSpinner from './components/LoadingSpinner';
 
 const App = () => {
 
-  const { currentUser, setCurrentUser, signup, login, logout } = useUser();
+  const { currentUser, setCurrentUser, infoLoaded, signup, login, logout } = useUser();
   const { watchlist, setWatchlist, deleteCoinFromWatchlist, addCoinToWatchlist } = useWatchlist();
   const { portfolio, setPortfolio, deleteCoinFromPortfolio, addCoinToPortfolio } = usePortfolio();
   
-  return (
+  return infoLoaded ? (
     <UserContext.Provider
       value={{ currentUser, setCurrentUser }}
     >
@@ -31,6 +32,8 @@ const App = () => {
         </PortfolioContext.Provider>
       </WatchlistContext.Provider>
     </UserContext.Provider>
+  ) : (
+      <LoadingSpinner />
   );
 }
 
