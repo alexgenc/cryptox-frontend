@@ -6,13 +6,29 @@
 
 @import '~bootstrap/dist/css/bootstrap.css';
 
-body {
+* {
   margin: 0;
-  background-color: #fafafa;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  background-color: #fafafa;
+}
+
+ul {
+  list-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 
 button {
   font-family: 'Montserrat', sans-serif;
