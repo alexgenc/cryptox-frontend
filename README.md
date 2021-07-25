@@ -91,15 +91,9 @@ To get a local copy up and running follow these steps:
 
 4. Install [Postgres](https://www.postgresql.org/).
 
-5. Create a database named "cryptox" in your terminal in the backend directory.
-    
-    ```sh
-    createdb cryptox
-    ```
-
 ### Seed Data to Database 
 
-6. Run the following command in your terminal in the backend directory to create the database tables and seed products to database.
+5. Run the following command in your terminal in the backend directory to create the database and the data tables and seed sample data to database. 
     
     ```sh
     psql -f cryptox.sql
@@ -113,15 +107,17 @@ To get a local copy up and running follow these steps:
 
 ## Potential Feature Ideas
 
+- Cryptocurrency Search
+- Live notifications
 - Forgot password
 - Reset password
 - Email verification
-- Cryptocurrency Search
-- Live notifications
 
 ## Contact
 
 Alex Genc - alexgenc@gmail.com - [Linkedin](https://www.linkedin.com/in/alexgenc/)
+
+Please let me know if you find any bugs!
 
 Project Links: <br/>
 [Live Demo](https://alexgenc-cryptox.netlify.app/#/)
