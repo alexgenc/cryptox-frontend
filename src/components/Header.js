@@ -8,7 +8,7 @@ const Header = ({ logout }) => {
   const { currentUser: user } = useContext(UserContext);
 
   return (
-    <header className="h-24 bg-white border-b border-gray-primary mb-8">
+    <header className="h-24 bg-white border-b border-gray-primary">
       <div className="container mx-auto max-w-screen-lg h-full">
         <div className="flex justify-between h-full">
           <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
@@ -21,8 +21,9 @@ const Header = ({ logout }) => {
           <div className="text-gray-700 text-center flex items-center align-items">
             {user ? (
               <>
-                {/* Watchlist Button */}
-                <Link to={ROUTES.WATCHLIST} aria-label="Watchlist" title="Watchlist">
+
+                {/* Cryptocurrencies Button */}
+                <Link to={ROUTES.CURRENCIES} aria-label="Cryptocurrencies" title="Cryptocurrencies">
                   <svg 
                     className="w-8 mr-6 text-black-light cursor-pointer"
                     xmlns="http://www.w3.org/2000/svg" 
@@ -31,6 +32,20 @@ const Header = ({ logout }) => {
                     stroke="currentColor"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
+                </Link>
+
+                {/* Watchlist Button */}
+                <Link to={ROUTES.WATCHLIST} aria-label="Watchlist" title="Watchlist">
+                  <svg 
+                    className="w-8 mr-6 text-black-light cursor-pointer" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </Link>
 
@@ -81,21 +96,43 @@ const Header = ({ logout }) => {
               </>
             ) : (
               <>
-                <Link to={ROUTES.LOGIN}>
-                  <button
-                    type="button"
-                    className="bg-blue font-bold text-sm rounded text-blue w-20 h-8"
+                {/* Cryptocurrencies Button */}
+                <Link to={ROUTES.CURRENCIES} aria-label="Cryptocurrencies" title="Cryptocurrencies">
+                  <svg 
+                    className="w-8 mr-6 text-black-light cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
                   >
-                    Log In
-                  </button>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
                 </Link>
-                <Link to={ROUTES.SIGN_UP}>
-                  <button
-                    type="button"
-                    className="font-bold text-sm rounded text-blue w-20 h-8"
+
+                {/* Login Button */}
+                <Link to={ROUTES.LOGIN} aria-label="Log In" title="Log In">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="w-8 mr-6 text-black-light cursor-pointer"
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
                   >
-                    Sign Up
-                  </button>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                  </svg>
+                </Link>
+
+                {/* Sign Up Button */}
+                <Link to={ROUTES.SIGN_UP} aria-label="Sign Up" title="Sign Up">
+                  <svg 
+                    className="w-8 mr-6 text-black-light cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                  </svg>
                 </Link>
               </>
             )}
