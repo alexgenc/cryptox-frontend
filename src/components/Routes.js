@@ -4,6 +4,7 @@ import UserContext from '../context/UserContext'
 import * as ROUTES from '../constants/Routes';
 import PrivateRoute from '../helpers/PrivateRoute';
 import IsUserLoggedIn from '../helpers/IsUserLoggedIn';
+import LoadingSpinner from './LoadingSpinner';
 
 // Lazy load pages for better performance
 const HomePage = lazy(() => import ('../pages/HomePage'));
@@ -30,7 +31,7 @@ const Routes = ({ login, signup }) => {
   const { currentUser } = useContext(UserContext)
 
   return (
-    <Suspense fallback={<p>Loading ...</p>}>
+    <Suspense fallback={LoadingSpinner}>
       <Switch>
 
         <Route exact path ="/">
