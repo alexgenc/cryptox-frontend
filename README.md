@@ -5,15 +5,19 @@ CryptoX is a cryptocurrency web application that displays market information for
 
 [Live Demo](https://alexgenc-cryptox.netlify.app/#/)
 
+Demo Account For Testing:
+- username: testuser
+- password: password 
+
 ## Features
 
 - Sign Up
 - Sign In
-- Main cryptocurrency page / Homepage
-- Specific cryptocurrency page / historical data / latest market information
-- Add/remove cryptocurrencies to watchlist (for logged in users)
-- Add/remove cryptocurrencies and quantities to portfolio (for logged in users)
-- Profile and settings page (for logged in users)
+- View Main Cryptocurrency Table
+- View Specific Cryptocurrency Page / Historical Data / Latest Market Information
+- Add/Remove Cryptocurrencies to Watchlist (Logged In Users Only)
+- Add/Remove cryptocurrencies and Their Quantities to Portfolio (Logged In Users Only)
+- Update Profile and Settings(Logged In Users Only)
 
 ## Folder Structure 
 
@@ -91,7 +95,7 @@ To get a local copy up and running follow these steps:
 
 4. Install [Postgres](https://www.postgresql.org/).
 
-### Seed Data to Database 
+### Create Database 
 
 5. Run the following command in your terminal in the backend directory to create the database and the data tables and seed sample data to database. 
     
@@ -99,7 +103,9 @@ To get a local copy up and running follow these steps:
     psql -f cryptox.sql
     ```
 
-7. Start servers in both frontend and backend directories and you are done!
+### Start Servers 
+
+6. Start servers in both frontend and backend directories and you are done!
     
     ```sh
     npm start
@@ -120,8 +126,8 @@ Alex Genc - alexgenc@gmail.com - [Linkedin](https://www.linkedin.com/in/alexgenc
 Please let me know if you find any bugs!
 
 Project Links: <br/>
-[Live Demo](https://alexgenc-cryptox.netlify.app/#/)
-[Frontend Repo](https://github.com/alexgenc/cryptox-frontend) <br/>
-[Backend Repo](https://github.com/alexgenc/cryptox-backend)
+- [Live Demo](https://alexgenc-cryptox.netlify.app/#/)
+- [Frontend Repo](https://github.com/alexgenc/cryptox-frontend)
+- [Backend Repo](https://github.com/alexgenc/cryptox-backend)
 
 
