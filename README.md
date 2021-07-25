@@ -5,7 +5,7 @@ CryptoX is a cryptocurrency web application that displays market information for
 
 [Live Demo](https://alexgenc-cryptox.netlify.app/#/)
 
-Demo Account:
+Demo User Account:
 - username: testuser
 - password: password 
 
