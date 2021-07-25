@@ -1,6 +1,7 @@
 export const LOGIN = '/login';
 export const SIGN_UP = '/signup';
 export const DASHBOARD = '/';
+export const CURRENCIES = '/currencies';
 export const WATCHLIST = '/my-watchlist';
 export const PORTFOLIO = '/my-portfolio';
 export const PROFILE = '/my-profile';
