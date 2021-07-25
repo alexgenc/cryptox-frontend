@@ -16,7 +16,7 @@ const HeroText = () => {
             type="button"
             className="readmore text-xl font-bold"
           >
-            Cryptocurrencies
+            View Prices
           </button>
         </Link>
         <Link to={ROUTES.PORTFOLIO}>
