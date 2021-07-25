@@ -9,6 +9,7 @@ export const TOKEN_STORAGE_ID = "CryptoX-token";
 const useUser = () => {
   const [currentUser, setCurrentUser] = useState(null);
   const [token, setToken] = useLocalStorage(TOKEN_STORAGE_ID);
+  const [infoLoaded, setInfoLoaded] = useState(false);
 
   // Load user info from API. Until a user is logged in and they have a token, this should not run. It only needs to re-run when a user logs out, so the value of the token is a dependency for this effect.
   useEffect(function loadUserInfo() {
@@ -25,7 +26,9 @@ const useUser = () => {
           setCurrentUser(null);
         }
       }
+      setInfoLoaded(true);
     }
+    setInfoLoaded(false);
     getCurrentUser();
   }, [token])
 
@@ -67,7 +70,7 @@ const useUser = () => {
     setToken(null);
   }
 
-  return { currentUser, setCurrentUser, signup, login, logout }
+  return { currentUser, setCurrentUser, infoLoaded, signup, login, logout }
 }
 
 export default useUser;
