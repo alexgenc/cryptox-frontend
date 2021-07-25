@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# CryptoX - FrontEnd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the Project
+CryptoX is a cryptocurrency web application that displays market information for cryptocurrencies. Market information can be viewed for the span of last 24 hours, 7 days and 1 year to get a better understanding of market trends. 
 
-## Available Scripts
+[Live Demo](https://alexgenc-cryptox.netlify.app/#/)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Sign Up
+- Sign In
+- Main cryptocurrency page / Homepage
+- Specific cryptocurrency page / historical data / latest market information
+- Add/remove cryptocurrencies to watchlist (for logged in users)
+- Add/remove cryptocurrencies and quantities to portfolio (for logged in users)
+- Profile and settings page (for logged in users)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Folder Structure 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+CryptoX/
+├──frontend
+  ├──src
+    ├── __tests__      # All test files (components, pages, helpers)
+    ├── assets         # Media assets
+    ├── components     # Reusable parts
+    ├── constants      # Reusable constant values
+    ├── context        # Global data contexts
+    ├── helpers        # Reusable helper functions
+    ├── hooks          # Custom hooks
+    ├── pages          # Application views
+    ├── services       # Reusable backend and API access methods
+    ├── utils          # Utility functions
+├──backend
+    ├── helpers        # Reusable helper functions
+    ├── middleware     # Convenience middleware 
+    ├── models         # Model setups
+    ├── routes         # Route setups
+    ├── schemas        # Schema configurations
+```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `npm run build`
+The coding languages, frameworks, and libraries that were used on this project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend
+* [Javascript](https://www.javascript.com/)
+* [React](https://reactjs.org/)
+* [Tailwind](https://tailwindcss.com/)
+* [Material-UI](https://material-ui.com/)
+* HTML
+* CSS
+* [Axios](https://www.npmjs.com/package/axios)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Backend
+* [Node.js](https://nodejs.org/en/)
+* [Express.js](https://expressjs.com/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Node-PostgreSQL](https://node-postgres.com/)
+* [JSON Web Tokens](https://jwt.io/)
+* [JSON Schema](https://json-schema.org/)
+* [bcrypt](https://www.npmjs.com/package/bcrypt)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Run the Project
 
-### `npm run eject`
+To get a local copy up and running follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Clone Repos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the frontend repo repo to a separate directory by going to [https://github.com/alexgenc/cryptox-frontend](https://github.com/alexgenc/cryptox-frontend). From there, click Download Zip again from the green Code button at the top of the page or enter the following in a separate directory in your terminal:
+  
+   ```sh
+   git clone https://github.com/alexgenc/cryptox-frontend.git
+   ```
+2. Clone the backend repo to a separate directory by going to [https://github.com/alexgenc/cryptox-backend](https://github.com/alexgenc/cryptox-backend). From there, click Download Zip again from the green Code button at the top of the page or enter the following in a separate directory in your terminal:
+   
+   ```sh
+   git clone https://github.com/alexgenc/cryptox-backend.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Library Installations
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. After cloning each repo (and unzipping if downloaded), install the libraries in each frontend and backend repo.
 
-## Learn More
+    ```sh
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Postgres Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Install [Postgres](https://www.postgresql.org/).
 
-### Code Splitting
+5. Create a database named "cryptox" in your terminal in the backend directory.
+    
+    ```sh
+    createdb cryptox
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Seed Data to Database 
 
-### Analyzing the Bundle Size
+6. Run the following command in your terminal in the backend directory to create the database tables and seed products to database.
+    
+    ```sh
+    psql -f cryptox.sql
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+7. Start servers in both frontend and backend directories and you are done!
+    
+    ```sh
+    npm start
+    ```
 
-### Making a Progressive Web App
+## Potential Feature Ideas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Forgot password
+- Reset password
+- Email verification
+- Cryptocurrency Search
+- Live notifications
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Alex Genc - alexgenc@gmail.com - [Linkedin](https://www.linkedin.com/in/alexgenc/)
 
-### Deployment
+Project Links: <br/>
+[Live Demo](https://alexgenc-cryptox.netlify.app/#/)
+[Frontend Repo](https://github.com/alexgenc/cryptox-frontend) <br/>
+[Backend Repo](https://github.com/alexgenc/cryptox-backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
