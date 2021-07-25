@@ -7,7 +7,6 @@ import WatchlistContext from './context/WatchlistContext';
 import PortfolioContext from './context/PortfolioContext';
 import Header from './components/Header';
 import Routes from './components/Routes';
-import './App.css';
 
 const App = () => {
 
