@@ -1,7 +1,7 @@
 # CryptoX - FrontEnd
 
 ## About the Project
-CryptoX is a cryptocurrency web application that displays market information for cryptocurrencies. Market information can be viewed for the span of last 24 hours, 7 days and 1 year to get a better understanding of market trends. 
+CryptoX is a cryptocurrency web application that displays market information for cryptocurrencies. Market information can be viewed for the span of last 24 hours, 7 days and 1 year to get a better understanding of market trends. Additionally, logged in users can create watchlists and portfolios.
 
 [Live Demo](https://alexgenc-cryptox.netlify.app/#/)
 
